@@ -17,8 +17,8 @@ FoodRouter
 FoodRouter
   .route('/items')
   .get((req, res, next) => {
-    const { name } = req.query
-    FoodService.getItemByName(req.app.get('db'), name)
+    const { item_name } = req.query
+    FoodService.getItemByName(req.app.get('db'), item_name)
       .then(item => {
         res.json(item)
       })
@@ -29,8 +29,8 @@ FoodRouter
 FoodRouter
   .route('/buns')
   .get((req, res, next) => {
-    const { name } = req.query
-    FoodService.getBunByName(req.app.get('db'), name)
+    const { bun_name } = req.query
+    FoodService.getBunByName(req.app.get('db'), bun_name)
       .then(bun => {
         res.json(bun)
       })
@@ -40,8 +40,8 @@ FoodRouter
 FoodRouter
   .route('/sauces')
   .get((req, res, next) => {
-    const { name } = req.query
-    FoodService.getSauceByName(req.app.get('db'), name)
+    const { sauce_name } = req.query
+    FoodService.getSauceByName(req.app.get('db'), sauce_name)
       .then(sauce => {
         res.json(sauce)
       })
@@ -51,8 +51,8 @@ FoodRouter
 FoodRouter
   .route('/fillings')
   .get((req, res, next) => {
-    const { name } = req.query
-    FoodService.getFillingByName(req.app.get('db'), name)
+    const { filling_name } = req.query
+    FoodService.getFillingByName(req.app.get('db'), filling_name)
       .then(sauce => {
         res.json(sauce)
       })
