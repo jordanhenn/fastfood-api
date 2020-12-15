@@ -3,8 +3,8 @@ const morgan = require('morgan')
 const cors = require('cors')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
-const foodRouter = require('./questions/questions-router')
-const creationsRouter = require('./leaderboard/leaderboard-router')
+const FoodRouter = require('./food/food-router')
+const CreationsRouter = require('./creations/creations-router')
 
 const app = express()
 
@@ -14,8 +14,8 @@ app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
 app.use(cors())
 app.use(helmet())
 
-app.use('/api/food', foodRouter)
-app.use('/api/creations', creationsRouter)
+app.use('/api/food', FoodRouter)
+app.use('/api/creations', CreationsRouter)
 
 app.use(function errorHandler(error, req, res, next) {
     let response

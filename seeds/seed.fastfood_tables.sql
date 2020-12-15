@@ -67,6 +67,7 @@ VALUES
 ('wendys_chili', 'Wendys Chili');
 
 INSERT INTO fastfood_items (item_name, item_description, price, bun_id, filling_id)
+VALUES
 ('burgerking_chickenfries', 'Burger King Chicken Fries', 6.79, null, 1),
 ('burgerking_baconking', 'Burger King Bacon King', 5.99, 2, 2),
 ('burgerking_doublecheeseburger', 'Burger King Double Cheeseburger', 1.69, 2, 3),
