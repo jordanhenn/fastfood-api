@@ -9,16 +9,16 @@ const CreationsService = {
           'price',
           'rating',
           'number_of_ratings',
-          'date_crated',
+          'date_created',
           'bun_id',
-          'fillingOne_id',
-          'fillingTwo_id',
+          'fillingone_id',
+          'fillingtwo_id',
           'sauce_id',
         )
         .orderBy('date_created', 'asc')
     },
     getById(db, id) {
-    return CreationsService.getAllItems(db)
+    return CreationsService.getAllCreations(db)
         .where('id', id)
         .first()
     },
@@ -38,7 +38,7 @@ const CreationsService = {
           .update({
               rating: newRating,
               number_of_ratings: newNumberofRatings
-          }, ['id', 'creation_name', 'user_name', 'price', 'rating', 'number_of_ratings', 'date_created', 'bun_id', 'fillingOne_id', 'fillingTwo_id', 'sauce_id'])
+          }, ['id', 'creation_name', 'user_name', 'price', 'rating', 'number_of_ratings', 'date_created', 'bun_id', 'fillingone_id', 'fillingtwo_id', 'sauce_id'])
       }
   }
   

@@ -17,14 +17,16 @@ CreationsRouter
       .catch(next)
   })
   .post(jsonBodyParser, (req, res, next) => {
-    const { user_name, creation_name, price, bun_id, sauce_id, fillingOne_id, fillingTwo_id } = req.body
-    const newCreation = { user_name, creation_name, price, bun_id, sauce_id, fillingOne_id, fillingTwo_id }
+    const { user_name, creation_name, price, bun_id, sauce_id, fillingone_id, fillingtwo_id, rating, number_of_ratings } = req.body
+    const newCreation = { user_name, creation_name, price, bun_id, sauce_id, fillingone_id, fillingtwo_id, number_of_ratings }
 
     for (const [key, value] of Object.entries(newCreation))
       if (value == null)
         return res.status(400).json({
           error: `Missing '${key}' in request body`
     })
+
+    newCreation.rating = rating
     
     CreationsService.postCreation(
       req.app.get('db'),
