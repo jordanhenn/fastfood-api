@@ -67,7 +67,7 @@ CreationsRouter
   
   async function checkCreationExists(req, res, next) {
     try {
-      const creation = await CreationsService.getCreationById(
+      const creation = await CreationsService.getById(
         req.app.get('db'),
         req.params.creation_id
       )
