@@ -32,7 +32,7 @@ CREATE TABLE fastfood_creations (
     creation_name TEXT NOT NULL,
     user_name TEXT NOT NULL,
     price INTEGER NOT NULL,
-    rating INTEGER,
+    rating DECIMAL,
     number_of_ratings INTEGER NOT NULL,
     date_created TIMESTAMP DEFAULT now() NOT NULL,
     bun_id INTEGER

@@ -33,7 +33,9 @@ const CreationsService = {
         )
     },
     updateRating(db, id, newRating, newNumberofRatings) {
-        return db('fastfood_creations')
+        return db
+          .select('*')
+          .from('fastfood_creations')
           .where('id', id)
           .update({
               rating: newRating,
