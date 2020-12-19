@@ -15,7 +15,7 @@ const CreationsService = {
           'fillingtwo_id',
           'sauce_id',
         )
-        .orderBy('date_created', 'asc')
+        .orderBy('date_created', 'desc')
     },
     getById(db, id) {
     return CreationsService.getAllCreations(db)
