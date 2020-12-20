@@ -257,241 +257,277 @@ function makeBunsArray() {
   function makeItemsArray() {
     return [
         {
+            id: 1,
             item_name: 'burgerking_baconking',
             item_description: 'Burger King Bacon King',
-            bun_id: 1,
+            bun_id: 2,
             filling_id: 1,
-            price: 6.79,
+            price: "5.99"
         },
         {
+            id: 2,
             item_name: 'burgerking_chickenfries',
             item_description: 'Burger King Chicken Fries',
             bun_id: null,
             filling_id: 2,
-            price: ,
+            price: "6.79"
         },
         {
+            id: 3,
             item_name: 'burgerking_doublecheeseburger',
             item_description: 'Burger King Double Cheeseburger',
-            bun_id: 1,
+            bun_id: 2,
             filling_id: 3,
-            price: ,
+            price: "1.69"
         },
         {
+            id: 4,
             item_name: 'burgerking_hersheyspie',
             item_description: 'Burger King Hersheys Sundae Pie',
             bun_id: null,
             filling_id: 4,
-            price: ,
+            price: "1.69"
         },
         {
+            id: 5,
             item_name: 'burgerking_whopper',
             item_description: 'Burger King Whopper',
             bun_id: 1,
-            filling_id: 5,
-            price: ,
+            filling_id: 2,
+            price: "4.19"
         },
         {
+            id: 6,
             item_name: 'carlsjr_doublewesternbacon',
             item_description: 'Carls Jr Double Western Bacon',
-            bun_id: 2,
+            bun_id: 3,
             filling_id: 6,
-            price: ,
+            price: "6.49"
         },
         {
+            id: 7,
             item_name: 'carlsjr_jalapenopopper',
             item_description: 'Carls Jr Jalapeno Poppers',
             bun_id: null,
             filling_id: 7,
-            price: ,
+            price: "2.99"
         },
         {
+            id: 8,
             item_name: 'carlsjr_superstar',
             item_description: 'Carls Jr Super Star',
-            bun_id: 2,
+            bun_id: 3,
             filling_id: 8,
-            price: ,
+            price: "5.99"
         },
         {
+            id: 9,
             item_name: 'innout_animalstylefries',
-            description: 'In N Out Animal Style Fries',
+            item_description: 'In N Out Animal Style Fries',
             bun_id: null,
             filling_id: 9,
-            price: ,
+            price: "3.40"
         },
         {
+            id: 10,
             item_name: 'innout_doubledouble',
-            description: 'In N Out Double Double',
-            bun_id: 3,
+            item_description: 'In N Out Double Double',
+            bun_id: 1,
             filling_id: 10,
-            price: ,
+            price: "3.45"
         },
         {
+            id: 11,
             item_name: 'innout_neopolitan',
             item_description: 'In N Out Neopolitan Shake',
             bun_id: null,
             filling_id: 11,
-            price: ,
+            price: "2.10"
         },
         {
+            id: 12,
             item_name: 'jack_baconswissbuttery',
             item_description: 'Jack in the Box Bacon & Swiss Butter Jack',
-            bun_id: 5,
+            bun_id: 9,
             filling_id: 12,
-            price: ,
+            price: "5.09"
         },
         {
+            id: 13,
             item_name: 'jack_curlyfries',
             item_description: 'Jack in the Box Curly Fries',
             bun_id: null,
             filling_id: 13,
-            price: ,
+            price: "1.99"
         },
         {
+            id: 14,
             item_name: 'jack_doubleultimatebacon',
             item_description: 'Jack in the Box Ultimate Bacon',
             bun_id: 4,
             filling_id: 14,
-            price: ,
+            price: "5.09"
         },
         {
+            id: 15,
             item_name: 'jack_minitacos',
             item_description: 'Jack in the Box Tiny Tacos',
             bun_id: null,
             filling_id: 15,
-            price: ,
+            price: "3.00"
         },
         {
+            id: 16,
             item_name: 'jack_sourdoughjack',
             item_description: 'Jack in the Box Sourdough Jack',
             bun_id: 6,
             filling_id: 16,
-            price: ,
+            price: "4.69"
         },
         {
+            id: 17,
             item_name: 'jack_spicychicken',
             item_description: 'Jack in the Box Spicy Chicken',
             bun_id: 4,
             filling_id: 17,
-            price: ,
+            price: "4.59"
         },
         {
+            id: 18,
             item_name: 'mcdonalds_bigmac',
             item_description: 'McDonalds Big Mac',
             bun_id: 10,
             filling_id: 18,
-            price: ,
+            price: "3.99"
         },
         {
+            id: 19,
             item_name: 'mcdonalds_crispychicken',
             item_description: 'McDonalds Crispy Chicken',
-            bun_id: 7,
+            bun_id: 5,
             filling_id: 19,
-            price: ,
+            price: "4.39"
         },
         {
+            id: 20,
             item_name: 'mcdonalds_filetofish',
             item_description: 'McDonalds Filet o Fish',
             bun_id: 11,
             filling_id: 20,
-            price: ,
+            price: "3.79"
         },
         {
+            id: 21,
             item_name: 'mcdonalds_mcdouble',
             item_description: 'McDonalds McDouble',
             bun_id: 11,
             filling_id: 21,
-            price: ,
+            price: "1.39"
         },
         {
+            id: 22,
             item_name: 'mcdonalds_mcgriddle',
             item_description: 'McDonalds McGriddle',
-            bun_id: 8,
+            bun_id: 7,
             filling_id: 22,
-            price: ,
+            price: "3.29"
         },
         {
+            id: 23,
             item_name: 'mcdonalds_mcmuffin',
             item_description: 'McDonalds McMuffin',
-            bun_id: 9,
+            bun_id: 8,
             filling_id: 23,
-            price: ,
+            price: "2.79"
         },
         {
+            id: 24,
             item_name: 'mcdonalds_mcnuggets',
             item_description: 'McDonalds McNuggets',
             bun_id: null,
             filling_id: 24,
-            price: ,
+            price: "4.49"
         },
         {
+            id: 25,
             item_name: 'mcdonalds_mcrib',
             item_description: 'McDonalds McRib',
             bun_id: null,
             filling_id: 25,
-            price: ,
+            price: "3.69"
         },
         {
+            id: 26,
             item_name: 'wendys_baconator',
             item_description: 'Wendys Baconator',
             bun_id: 12,
             filling_id: 26,
-            price: ,
+            price: "6.09"
         },
         {
+            id: 27,
             item_name: 'wendys_chili',
             item_description: 'Wendys Chili',
             bun_id: null,
             filling_id: 27,
-            price: ,
+            price: "2.09"
         },
         {
+            id: 28,
             item_name: 'wendys_davesdouble',
             item_description: 'Wendys Daves Double',
             bun_id: 12,
             filling_id: 28,
-            price: ,
+            price: "5.19"
         },
         {
+            id: 29,
             item_name: 'wendys_spicychicken',
             item_description: 'Wendys Spicy Chicken',
             bun_id: 12,
             filling_id: 29,
-            price: ,
+            price: "4.69"
         }
     ]
-  }
   }
   
   function makeCreationsArray() {
     return [
       {
         id: 1,
-        question: 'Who is Eddie?',
-        answer: 'doesntreallymatter',
-        category: 'movies',
-        points: 200
+        creation_name: 'The Robby Bobby',
+        user_name: 'Robby Bobby',
+        bun_id: 2,
+        fillingone_id: 1,
+        fillingtwo_id: 1,
+        rating: null,
+        number_of_ratings: 0,
+        sauce_id: 1,
+        price: "11.98"
       },
       {
         id: 2,
-        question: 'Who is Donnie?',
-        answer: 'doesntreallymatter',
-        category: 'movies',
-        points: 200
+        creation_name: 'The Jerry Terry',
+        user_name: 'Jerry Terry',
+        bun_id: 2,
+        fillingone_id: 2,
+        fillingtwo_id: 2,
+        rating: null,
+        number_of_ratings: 0,
+        sauce_id: 1,
+        price: "15.27"
       },
       {
         id: 3,
-        question: 'Who is Greg?',
-        answer: 'doesntreallymatter',
-        category: 'science',
-        points: 200
-      },
-      {
-        id: 4,
-        question: 'Who is Scottie?',
-        answer: 'doesntreallymatter',
-        category: 'science',
-        points: 200
+        creation_name: 'The Ronnie Donnie',
+        user_name: 'Ronnie Donnie',
+        bun_id: 2,
+        fillingone_id: 3,
+        fillingtwo_id: 3,
+        rating: null,
+        number_of_ratings: 0,
+        sauce_id: 1,
+        price: "3.38"
       },
     ]
   }
@@ -501,8 +537,9 @@ function makeBunsArray() {
     const testBuns = makeBunsArray()
     const testFillings = makeFillingsArray()
     const testSauces = makeSaucesArray()
+    const testItems = makeItemsArray()
     const testCreations = makeCreationsArray()
-    return { testBuns, testFillings, testSauces, testCreations }
+    return { testBuns, testFillings, testSauces, testItems, testCreations }
   }
   
   function cleanTables(db) {
@@ -516,65 +553,42 @@ function makeBunsArray() {
         RESTART IDENTITY CASCADE`
     )
   }
+
   
-  function seedUsers(db, users) {
-    const preppedUsers = users.map(user => ({
-      ...user,
-      password: bcrypt.hashSync(user.password, 1)
-    }))
-    return db.into('drivia_users').insert(preppedUsers)
-      .then(() =>
-        db.raw(
-          `SELECT setval('drivia_users_id_seq', ?)`,
-          [users[users.length -1 ].id],
-        )
-      )
-  }
-  
-  function seedQuestionsTables(db, users, questions) {
-    // use a transaction to group the queries and auto rollback on any failure
-    return db.transaction(async trx => {
-      await seedUsers(trx, users)
-      await trx.into('drivia_questions').insert(questions)
-      await trx.raw(
-               `SELECT setval('drivia_questions_id_seq', ?)`,
-               [questions[questions.length - 1].id],
-             )
-    })
+  function seedBunsTable(db, buns) {
+    return db.into('fastfood_buns').insert(buns)
   }
 
-  function seedLeaderboardTable(db, users, scores) {
-    // use a transaction to group the queries and auto rollback on any failure
-    return db.transaction(async trx => {
-      await seedUsers(trx, users)
-      await trx.into('drivia_leaderboard').insert(scores)
-      await trx.raw(
-               `SELECT setval('drivia_leaderboard_id_seq', ?)`,
-               [scores[scores.length - 1].id],
-             )
-    })
+  function seedSaucesTable(db, sauces) {
+    return db.into('fastfood_sauces').insert(sauces)
   }
 
-  function makeAuthHeader(user, secret = process.env.JWT_SECRET) {
-    const token = jwt.sign({ user_id: user.id }, secret, {
-      subject: user.user_name,
-      algorithm: 'HS256',
-    })
-    return `Bearer ${token}`
+  function seedFillingsTable(db, fillings) {
+    return db.into('fastfood_fillings').insert(fillings)
+  }
+
+  function seedItemsTable(db, items) {
+    return db.into('fastfood_items').insert(items)
+  }
+
+  function seedCreationsTable(db, creations) {
+    return db.into('fastfood_creations').insert(creations)
   }
   
 
   
   module.exports = {
-    makeUsersArray,
-    makeQuestionsArray,
-    makeExpectedScores,
-    makeLeaderboardArray,
+    makeBunsArray,
+    makeSaucesArray,
+    makeFillingsArray,
+    makeItemsArray,
+    makeCreationsArray,
   
-    makeDriviaFixtures,
+    makeFastFoodFixtures,
     cleanTables,
-    seedQuestionsTables,
-    seedLeaderboardTable,
-    seedUsers,
-    makeAuthHeader
+    seedBunsTable,
+    seedSaucesTable,
+    seedFillingsTable,
+    seedItemsTable,
+    seedCreationsTable
   }
