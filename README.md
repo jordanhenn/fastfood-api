@@ -1,26 +1,52 @@
-# Express Boilerplate!
+# Fast Food Evolved API
+https://stormy-tundra-10933.herokuapp.com/api
 
-This is a boilerplate project used for starting new projects!
+# Fast Food Client
+https://fastfood-client.jordanhenn.vercel.app
 
-## Set up
+# Client REPO
+https://github.com/jordanhenn/fastfood-client
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+## Endpoints
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+### GET /food
+Returns all fast food items in ascending order by price
 
-## Scripts
+### GET /food/items
+Returns a specific fast food item. Must include a query for the item_name. 
 
-Start the application `npm start`
+### GET /food/buns
+Returns a specific fast food bun. Must include a query for the bun_name. 
 
-Start nodemon for the application `npm run dev`
+### GET /food/buns/:bun_id
+Returns a specific fast food bun by id.
 
-Run the tests `npm test`
+### GET /food/sauces
+Returns a specific fast food sauce. Must include a query for the sauce_name. 
 
-## Deploying
+### GET /food/sauces/:sauce_id
+Returns a specific fast food sauce by id. 
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+### GET /food/fillings
+Returns a specific fast food filling. Must include a query for the filling_name. 
+
+### GET /food/fillings/:filling_id
+Returns a specific fast food filling by id. 
+
+### GET /creations
+Returns an array of all user submitted creations.
+
+### GET /creations/:creation_id
+Returns a user creation by id. 
+
+### POST /creations
+Posts user's creation to the database. 
+
+### PUT /creations/:creation_id
+Updates the rating of a user creation by id. Must include the new rating and new number of total ratings in the request body. 
+
+### Tech Used
+Express, PostgreSQL, Javascript, Node
+
+## Summary
+Fast Food Evolved is an app where you create fast food hybrids using items form different restaurantes. User starts by selecting buns, sauces, and fillings using carousel selections, finalizes their creation, calculates the price, and then has the option to post it to the site where it can be shared with other users or on their social media pages. 
